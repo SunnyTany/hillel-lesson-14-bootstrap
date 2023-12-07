@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+    defer></script>
+  <title>Мій сайт на Bootstrap</title>
+</head>
+
+<body>
+  <!-- start HEADER -->
+  <header class="header bg-info mb-4 p-4">
+    <div class="container-md">
+      <nav class="navbar rounded-pill bg-secondary navbar-expand-lg bg-body-tertiary p-4">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light fs-2" href="#">Навбар</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Перемикач навігації">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light text-uppercase fs-5 fw-" aria-current="page" href="#">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light text-uppercase fs-5 " aria-current="page" href="#">Проекти</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light text-uppercase fs-5" href="#">Галерея</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light text-uppercase fs-5" href="#">Контакти</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light text-uppercase fs-5" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Новини
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Перша стаття</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Друга стаття</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Третя стаття</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Четверта стаття</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Допоміжна інформація</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Пошук">
+              <button class="btn btn-outline-success btn-primary text-light" type="submit">Пошук</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end HEADER -->
+
+  <!-- start MAIN -->
+  <main class="main">
+    <div class="container-md">
+      <div class="row">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Головна</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Проекти</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
+        <!-- start MAIN CONTENT -->
+        <section class="main-content col-xxl-7 col-xl-8 p-3">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <!-- 1 item -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  Проект №1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <div class="card mb-3">
+                    <img src="images/400x300.svg" class="card-img-top" alt="Проект №1">
+                    <div class="card-body">
+                      <h5 class="card-title">Назва проекту №1</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, praesentium delectus obcaecati
+                        sapiente laboriosam dolore rem a, fugit mollitia, odio provident exercitationem nisi doloremque
+                        quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex similique magnam repellat
+                        amet incidunt iste.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 item -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Проект №2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="card mb-3">
+                  <img src="images/400x300.svg" class="card-img-top" alt="Проект №2">
+                  <div class="card-body">
+                    <h5 class="card-title">Назва проекту №2</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, praesentium delectus obcaecati
+                      sapiente laboriosam dolore rem a, fugit mollitia, odio provident exercitationem nisi doloremque
+                      quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non minus fugit in repellat qui
+                      aliquid? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, excepturi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 item -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  Проект №3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="card mb-3">
+                    <img src="images/400x300.svg" class="card-img-top" alt="Проект №3">
+                    <div class="card-body">
+                      <h5 class="card-title">Назва проекту №3</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, praesentium delectus obcaecati
+                        sapiente laboriosam dolore rem a, fugit mollitia, odio provident exercitationem nisi doloremque
+                        quos?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item -->
+          </div>
+        </section>
+        <!-- end MAIN CONTENT -->
+
+        <!-- start LEFT -->
+        <aside class="left col-xxl-3 col-xl-4 order-xl-first p-3">
+          <!-- start SLIDER -->
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <!-- start buttons -->
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5">
+              </button>
+              <!-- end buttons -->
+            </div>
+            <div class="carousel-inner">
+              <!-- 1 slide -->
+              <div class="carousel-item active">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text">Підпис до першого малюнку</p>
+                  </div>
+                  <img src="images/100x200.svg" class="card-img-bottom img-thumbnail" alt="перший малюнок">
+                </div>
+              </div>
+              <!-- 2 slide -->
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text">Підпис до другого малюнку</p>
+                  </div>
+                  <img src="images/100x200.svg" class="card-img-bottom img-thumbnail" alt="другий малюнок">
+                </div>
+              </div>
+              <!-- 3 slide -->
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text">Підпис до третього малюнку</p>
+                  </div>
+                  <img src="images/100x200.svg" class="card-img-bottom img-thumbnail" alt="третій малюнок">
+                </div>
+              </div>
+              <!-- 4 slide -->
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text">Підпис до четвертого малюнку</p>
+                  </div>
+                  <img src="images/100x200.svg" class="card-img-bottom img-thumbnail" alt="другий малюнок">
+                </div>
+              </div>
+              <!-- 5 slide -->
+              <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text">Підпис до пятого малюнку</p>
+                  </div>
+                  <img src="images/100x200.svg" class="card-img-bottom img-thumbnail" alt="третій малюнок">
+                </div>
+              </div>
+              <!-- end slide -->
+            </div>
+            <!-- start buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Попередній</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Наступний</span>
+            </button>
+            <!-- end buttons -->
+          </div>
+          <!-- end SLIDER -->
+        </aside>
+        <!-- end LEFT -->
+
+        <!-- start RIGHT -->
+        <aside class="right col-xxl-2 col-xl-12 p-3">
+          <form class="p-3">
+            <fieldset>
+              <legend class="mb-3">Замовити проект можна зараз на нашому сайті</legend>
+              <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Ім'я</label>
+                <input type="text" class="form-control" id="exampleInputName">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Адреса електронної пошти</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Мы ніколи нікому не передамо вашу електронну пошту.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPhone" class="form-label">Номер телефону</label>
+                <input type="tel" class="form-control" id="exampleInputPhone">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Дозволяю надсилати інформаційні листи</label>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Відправити</button>
+          </form>
+        </aside>
+        <!-- end RIGHT -->
+      </div>
+    </div>
+  </main>
+  <!-- end MAIN -->
+
+  <!-- start FOOTER -->
+  <footer class="footer bg-info sticky-bottom p-3">
+    <div class="container-md">
+      <div class="row">
+        <p class="text-center">&#169; Колкова Тетяна</p>
+      </div>
+    </div>
+  </footer>
+  <!-- end FOOTER -->
+
+  <!-- start MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ми отримали Ваш номер телефону</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <p class="p-3 text-align-center">Будь ласка, очікуйте на дзвінок від нас.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Зачинити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end MODAL -->
+</body>
+
+</html>
